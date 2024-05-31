@@ -129,7 +129,8 @@
 }
 
 .lots {
-	padding: 180px 25px 0;
+	padding: 180px 25px;
+	padding-bottom: 0;
 }
 
 .lots__title {
@@ -231,7 +232,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
-	margin-top: 182px;
+	margin-top: 205px;
 	margin-bottom: 90px;
 }
 
@@ -252,9 +253,13 @@
 }
 
 .social {
+	width: 240px;
 	margin-right: 49px;
 	display: flex;
-	gap: 48px;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 48px;
+	row-gap: 10px;
 	list-style: none;
 	justify-self: end;
 }
