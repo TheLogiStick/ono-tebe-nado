@@ -12,10 +12,6 @@
 	text-transform: uppercase;
 }
 
-/* Переделал затемнение фона с градиента на overlay
-Сначала сделал через position relative и absolute, но это требовало указания z-index, position relative для родителя
-Поэтому переписал так, чтобы всё что требовалось это обернуть __inner оверлеем */
-
 .overlay {
 	background-color: rgba(0, 0, 0, 0.6);
 	width: 100%;
@@ -39,7 +35,7 @@
 	list-style: none;
 }
 
-.nav__list-item--active a {
+.nav__link--active {
 	text-decoration: none;
 }
 
@@ -255,8 +251,6 @@
 	text-align: center;
 	list-style: none;
 }
-
-/* Дописал что при переполнении контейнера следующие соц. сети переносились и центрировались */
 
 .social {
 	width: 240px;
