@@ -12,6 +12,15 @@
 	text-transform: uppercase;
 }
 
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 .nav {
 	margin-right: 43px;
 	line-height: 21.13px;
@@ -47,27 +56,32 @@
 }
 
 .cover {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url('../images/cover.jpg') center/cover no-repeat;
+	position: relative;
+	background: url('../images/cover.jpg') center/cover no-repeat;
+}
+
+.cover__container {
+	position: relative;
+	z-index: 1;
 }
 
 .cover__title {
-	padding: 152px 50px 134px;
+	padding: 165px 50px 134px;
 	font-weight: 700;
 	font-size: 100px;
-	line-height: 100px;
+	line-height: 1;
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 
 	display: flex;
+	gap: 20px;
 	flex-direction: column;
 	align-items: center;
 }
 
 .cover__title-line {
 	display: block;
-	padding-top: 25px;
 }
 
 .cover__title-line span {
@@ -76,12 +90,15 @@
 
 .cover__title-line:first-child {
 	align-self: start;
+	line-height: 115px;
 }
 
 .cover__title-line:last-child {
-	padding-top: 20px;
-	margin-right: -61px;
 	align-self: end;
+}
+
+.cover__title-last-line span:last-child {
+	letter-spacing: 0;
 }
 
 .cover__bottom {
@@ -95,16 +112,12 @@
 	text-transform: uppercase;
 }
 
-.cover__bottom span {
-	letter-spacing: 0.9em;
+.cover__text {
+	word-spacing: 0.9em;
 }
 
-.cover__bottom span:nth-child(4) {
-	letter-spacing: 0.8em;
-}
-
-.cover__bottom span:last-child {
-	letter-spacing: 0.7em;
+.cover__text span {
+	word-spacing: 0.8em;
 }
 
 .cover__button {
